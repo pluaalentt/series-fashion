@@ -1,0 +1,88 @@
+:root {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #1a1a1a;
+  background: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+button {
+  border-radius: 0;
+  border: 1px solid #000;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background: #000;
+  color: #fff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+select {
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 0;
+  border: 1px solid #d0d0d0;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  color: #1a1a1a;
+}
+
+select:hover {
+  border-color: #000;
+}
+
+select:focus {
+  outline: none;
+  border-color: #000;
+}
+
+select:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #1a1a1a;
+  }
+}

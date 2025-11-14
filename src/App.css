@@ -1,0 +1,237 @@
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  padding: 60px 20px 40px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #000;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.header p {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.main-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.selector-section {
+  background: white;
+  padding: 40px 0;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.selector-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.selector-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.selector-item label {
+  font-weight: 400;
+  color: #000;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.search-button {
+  background: #000;
+  color: white;
+  border: 1px solid #000;
+  padding: 14px 40px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.search-button:hover:not(:disabled) {
+  background: white;
+  color: #000;
+}
+
+.search-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.gallery-section {
+  margin-top: 40px;
+}
+
+.character-title {
+  color: #000;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.outfits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 20px 0;
+}
+
+.outfit-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.outfit-card:hover {
+  border-color: #000;
+}
+
+.outfit-image-container {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  background: #f5f5f5;
+  position: relative;
+}
+
+.outfit-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.2s ease;
+}
+
+.outfit-card:hover .outfit-image {
+  opacity: 0.85;
+}
+
+.outfit-info {
+  padding: 24px 20px;
+  background: white;
+}
+
+.outfit-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.outfit-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.outfit-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 0.75rem;
+  color: #999;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.outfit-season {
+  background: #f5f5f5;
+  padding: 4px 10px;
+  border: 1px solid #e0e0e0;
+  font-weight: 400;
+  color: #000;
+  font-size: 0.7rem;
+}
+
+.no-results {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+  padding: 80px 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.emoji {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  display: block;
+  opacity: 0.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  .header p {
+    font-size: 0.75rem;
+  }
+
+  .selector-section {
+    padding: 30px 0;
+  }
+
+  .selector-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .outfits-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .character-title {
+    font-size: 1.25rem;
+  }
+
+  .app {
+    padding: 20px;
+  }
+}

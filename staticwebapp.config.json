@@ -1,0 +1,17 @@
+{
+  "$schema": "https://aka.ms/azure-staticwebapps-schema",
+  "routes": [
+    {
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*.{png,jpg,gif,ico}", "/css/*"]
+  },
+  "mimeTypes": {
+    ".json": "application/json"
+  }
+}
